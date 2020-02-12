@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.description           = %q{validations-skipper is a gem that enables objects
                                to skip specified validations with ease.
                                It can be applied to ActiveRecord::Base classes.}
-  s.homepage              = 'https://github.com/victorcorcos/validations-skipper'
+  s.homepage              = 'https://github.com/Victorcorcos/validations-skipper'
   s.summary               = %q{validations-skipper is a gem that enables objects
                                to skip specified validations with ease.
                                It can be applied to ActiveRecord::Base classes.}
