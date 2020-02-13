@@ -27,6 +27,8 @@ gem 'validations_skipper'
 1. First it is required to include the `ValidationsSkipable` module on the class you want to enable this feature.
 
 ```rb
+require 'validation_skipper'
+
 class ClassExample
   include ActiveModel::Validations # this is not necessary if this class is a descendent of an ActiveRecord::Base
   include ValidationsSkipable
