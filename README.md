@@ -1,8 +1,8 @@
-# Validations Skipper
+# Validations Skipper :gem:
 
-A repository dedicated to a ruby gem that enables ruby classes to skip specific validations.
+A repository dedicated to a ruby gem that enables classes to skip specific validations.
 
-# Why this is necessary?
+# Why it is necessary?
 
 Currently, **the rails only enables to skip all validations** via:
 
@@ -10,9 +10,17 @@ Currently, **the rails only enables to skip all validations** via:
 item.save!(validate: false)
 ```
 
-However, sometimes what you want is just to skip one or another validation, not **all of them**.
+However, sometimes what you want is just to skip one or another validation, **not all of them**.
 
-With this gem, you can easily skip the desired validations.
+With this gem, you can easily skip the validations that you want.
+
+# Instalation
+
+Add `validations_skipper` to your Gemfile.
+
+```rb
+gem 'validations_skipper'
+```
 
 # Usage
 
@@ -39,14 +47,7 @@ object.skip_validations = [:validation_method]
 object.save! # Here you can see the object is saved and the validation method is skipped
 ```
 
-# Instalation
-
-Add `validations_skipper` to your Gemfile.
-
-```rb
-gem 'validations_skipper'
-```
-
 # Author
 
 contact: victorcorcos@gmail.com
+name: Victor Cordeiro Costa
