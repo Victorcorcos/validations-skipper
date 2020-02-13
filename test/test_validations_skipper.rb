@@ -78,4 +78,38 @@ class TestValidationsSkipper < Minitest::Test
 
     assert_equal(@object.valid?, false)
   end
+
+  class ClassWithPrivateValidation
+    include ActiveModel::Validations
+    include ValidationsSkipable
+
+    validate :private_validation_method
+
+    private
+
+    def private_validation_method
+      errors.add(:column, 'An error message')
+    end
+  end
+
+  def test_skipping_private_validation
+    @object = ClassWithPrivateValidation.new
+    @object.skip_validations = [:private_validation_method]
+
+    assert_equal(@object.valid?, true)
+  end
+
+  def test_not_skipping_private_validation
+    @object = ClassWithPrivateValidation.new
+
+    assert_equal(@object.valid?, false)
+  end
+
+  def test_toggleing_skipping_validation
+    @object = ClassWithPrivateValidation.new
+    @object.skip_validations = [:private_validation_method]
+    @object.skip_validations = []
+
+    assert_equal(@object.valid?, false)
+  end
 end
