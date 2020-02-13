@@ -1,6 +1,6 @@
 # Validations Skipper :gem:
 
-A repository dedicated to a ruby gem that enables classes to skip specific validations.
+A repository dedicated to a ruby gem that allows classes to skip desired validations.
 
 # Why it is necessary?
 
