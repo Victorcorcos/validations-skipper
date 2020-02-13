@@ -4,7 +4,8 @@ module ValidationsSkipable
       attr_accessor :skip_validations
 
       def initialize(*)
-        @original_methods = self.class.instance_methods.map do |instance_method|
+        instance_methods = self.class.instance_methods + self.class.private_instance_methods
+        @original_methods = instance_methods.map do |instance_method|
           [instance_method, method(instance_method)]
         end.to_h
         super
