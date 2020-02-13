@@ -51,5 +51,8 @@ object.save! # Here you can see the object is saved and the validation method is
 
 # Author
 
+Victor Cordeiro Costa
+
 contact: victorcorcos@gmail.com
-name: Victor Cordeiro Costa
+
+company: oxeanbits (http://www.oxeanbits.com/)
