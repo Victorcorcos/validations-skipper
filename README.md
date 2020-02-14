@@ -53,6 +53,8 @@ object.save! # Here you can see the object is saved and the validation method is
 
 Victor Cordeiro Costa
 
-contact: victorcorcos@gmail.com
+contact1: victorcorcos@gmail.com
+
+contact2: victor.costa@oxeanbits.com
 
 company: oxeanbits (http://www.oxeanbits.com/)
