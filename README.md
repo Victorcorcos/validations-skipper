@@ -16,10 +16,10 @@ With this gem, you can easily skip the validations that you want.
 
 # Instalation
 
-Add `validations_skipper` to your Gemfile.
+Add `validations-skipper` to your Gemfile.
 
 ```rb
-gem 'validations_skipper'
+gem 'validations-skipper'
 ```
 
 # Usage
