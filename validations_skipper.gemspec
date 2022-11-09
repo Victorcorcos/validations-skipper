@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'minitest', '~> 5.10'
   s.add_development_dependency 'rake', '~> 12.1'
-  s.add_dependency 'activerecord', '>= 5.2'
+  s.add_dependency 'activerecord', '~> 5.2'
 end
