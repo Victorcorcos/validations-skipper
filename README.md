@@ -1,6 +1,10 @@
-# Validations Skipper :gem:
+<p align="center">
+  <img src="https://i.imgur.com/6xIIecF.png" alt="Validations Skipper Logo" width="200" height="200"/>
+</p>
 
-A repository dedicated to a ruby gem that allows classes to skip desired validations.
+<p align="center">
+  A repository dedicated to a ruby gem that allows classes to skip desired validations.
+</p>
 
 # Why it is necessary?
 
